@@ -60,6 +60,9 @@ img{
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(231, 231, 231, 0.438); 
+  }
   .my-info{
     display: grid;
     grid-template-rows: 1fr 6fr;

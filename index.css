@@ -207,4 +207,10 @@ img{
       .container{
         height:100vh;
       }
+      .skills-div{
+        margin-bottom: 100px;
+      }
+      html{
+        overflow-y:hidden;
+      }
   }

@@ -23,7 +23,10 @@ body{
     padding-left:10px;
     padding-right:10px;
 }
-video{
+#myVideo1{
+    display: none;
+}
+#myVideo{
     position: fixed;
     width:100%;
     top:-100px;
@@ -140,7 +143,7 @@ img{
   }
 
   @media screen and (max-width:1500px){
-    video{
+    #myVideo{
         /* position: fixed; */
         object-fit: cover;
         height:100%;
@@ -191,6 +194,15 @@ img{
   @media screen and (max-width:700px){
     .skills-box{
         width:200px;
+    }
+    #myVideo{
+        display: none;
+    }
+    #myVideo1{
+        display: block;
+        position: fixed;
+        z-index: -5;
+        opacity: .3;
     }
     .skills-box:hover{
         scale:1;

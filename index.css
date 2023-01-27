@@ -1,0 +1,210 @@
+html{
+    background-color: black;
+    overflow-y: hidden;
+}
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: left;
+    height:100vh;
+    align-items: center;
+    color:rgb(0, 0, 0);
+}
+.container{
+    width:300px;
+    padding-top: 40px;
+    margin-left:20px;
+    background-color: rgba(0, 0, 0, 0.276);
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height:100vh;
+    padding-left:10px;
+    padding-right:10px;
+}
+video{
+    position: fixed;
+    width:100%;
+    top:-100px;
+    z-index: -5;
+    opacity: .3;
+}
+img{
+    width:200px;
+}
+.app{
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(150, 150, 150);
+    transition: .4s;
+}
+.app:hover{
+    color:rgb(239, 239, 239);
+}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(231, 231, 231, 0.438);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .my-info{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(218, 218, 218);
+  }
+  .email{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    transition: .4s;
+  }
+  .email:hover{
+    color: white;
+  }
+  .my-info1{
+    text-align: center;
+  }
+  .name-head{
+    margin-bottom: 0;
+  }
+  .skills-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(219, 219, 219);
+    /* border:3px solid white; */
+  }
+  .skills-div, li{
+    list-style-type:none;
+  }
+  .skills-box{
+    background-color: rgba(0, 0, 0, 0.306);
+    box-shadow: 0 0 50px black;
+    border-radius: 40px;
+    transition: 0.6s;
+    /* border: 3px solid grey; */
+  }
+  .skills-box:hover{
+    scale:0.99;
+    box-shadow: 0 0 20px rgb(53, 53, 53);
+  }
+  .skills-row1{
+    display: flex;
+    /* border:2px solid red; */
+    margin-bottom: 5px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    padding-left:30px;
+  }
+  .skills-row2{
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* border: 2px solid green; */
+  }
+  .skills-row1head, .skills-row2head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li{
+    margin-right: 40px;
+    font-size: 30px;
+  }
+  i{
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .skill-head{
+    font-size: 40px;
+  }
+
+  @media screen and (max-width:1500px){
+    video{
+        /* position: fixed; */
+        object-fit: cover;
+        height:100%;
+        top:0;
+        z-index: -5;
+        opacity: .3;
+    }
+    html{
+        overflow-y:scroll;
+    }
+  }
+
+  @media screen and (max-width:1050px){
+    .skills-row1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        /* border:2px solid red; */
+        margin-bottom: 5px;
+        border-bottom: 2px solid grey;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        padding-left:0;
+      }
+      .skills-row2{
+        display: flex;
+        width:400px;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        /* border: 2px solid green; */
+      }
+      li{
+        margin-right: 0;
+        font-size: 18px;
+      }
+      .skills-div{
+        padding-top:40px;
+      }
+      .skill-head{
+        font-size:26px;
+        margin:14px;
+        border-bottom: 1px solid grey;
+      }
+  }
+  @media screen and (max-width:700px){
+    .skills-box{
+        width:200px;
+    }
+    .skills-row1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        /* border:2px solid red; */
+        margin-bottom: 5px;
+        border-bottom: 2px solid grey;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        padding-left:0;
+      }
+      .skills-div{
+        padding-top:0;
+      }
+      .container{
+        height:100vh;
+      }
+  }

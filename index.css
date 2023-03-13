@@ -1,6 +1,6 @@
 html{
     background-color: black;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 body{
     margin:0;
@@ -72,6 +72,23 @@ img{
     width: 100vw;
     height: 100vh;
     color: rgb(218, 218, 218);
+  }
+  .youtube{
+    font-size: 20px;
+    animation: animate 10s infinite;
+  }
+  @keyframes animate{
+    25%{
+        font-size: 22px;
+        color: rgb(255, 177, 177);
+    }
+    50%{
+        font-size: 18px;
+    }
+    75%{
+        font-size: 22px;
+        color: rgb(159, 251, 252);
+    }
   }
   .email{
     text-decoration: none;

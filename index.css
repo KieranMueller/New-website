@@ -79,14 +79,9 @@ img{
   }
   @keyframes animate{
     25%{
-        font-size: 22px;
         color: rgb(255, 177, 177);
     }
-    50%{
-        font-size: 18px;
-    }
     75%{
-        font-size: 22px;
         color: rgb(159, 251, 252);
     }
   }
